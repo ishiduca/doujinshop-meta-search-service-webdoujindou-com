@@ -1,0 +1,25 @@
+{
+  "name": "doujinshop-meta-search-web-doujindou-com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape t/*.js | tap-spec"
+  },
+  "author": "ishiduca@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "doujinshop-meta-search-service": "git+https://github.com/ishiduca/doujinshop-meta-search-service.git"
+  },
+  "standard": {
+    "ignore": "t/"
+  },
+  "bin": {
+    "meta-webdoujindou": "./bin/metasearch"
+  },
+  "devDependencies": {
+    "minimist": "^1.2.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.7.0"
+  }
+}

@@ -1,0 +1,1617 @@
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://web.doujindou.com/rss/index.xml">
+<link rel="stylesheet" href="/css/style-top.css" type="text/css">
+
+<script type="text/javascript" src="/css/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/script/ddaccordion.js"></script>
+<link rel="stylesheet" type="text/css" href="/script/ddaccordion.css">
+<meta name="google-site-verification" content="DBmFavNrf4aSMNo4IBgsyULmxMq4_pQf3YCdSPeUuOY" />
+
+<link rel="stylesheet" href="/css/seek.css" type="text/css">
+<link rel="stylesheet" href="/css/style-top201305.css" type="text/css">
+
+
+
+
+
+<title>詳細検索 同人堂</title>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+
+
+<!-- 上部 -->
+	<div class="hd_line">
+		<h1>同人誌通販・抱き枕カバー通販・東方通販なら同人堂</h1>
+		<div class="hd_info">
+			<ul>
+				<li><a href="http://web.doujindou.com/info/about.html">初めての方へ</a>　|　</li>
+				<li><a href="http://web.doujindou.com/info/faq.html">よくあるご質問</a>　|　</li>
+				<li><a href="http://web.doujindou.com/info/first.html">ご利用ガイド</a>　|　</li>
+				<li><a href="http://web.doujindou.com/itaku/">委託販売について</a>　|　</li>
+				<li><a href="http://web.doujindou.com/itaku/shops/">提携店舗一覧</a>　|　</li>
+				<li><a href="http://web.doujindou.com/info/contact.html#contact">お問い合わせ</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+<style TYPE="text/css">
+<!--
+.hd_linenew{
+	margin: 3px 0;
+	padding:0;
+}
+.newheader_menu{
+	width:100%;
+	margin:6px 0;
+	padding:0;
+}
+
+
+.newheader_menu a{
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 8px;
+	margin:0 0 0 0.4%;
+	padding:4px 0.3%;
+	box-shadow: 2px 2px 3px rgba(190, 190, 230, 0.18),0 0 2px 1px rgba(255,255,255,0.8) inset;
+}
+.newheader_menu a:hover{
+	color:#2E56A5;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	box-shadow: 0 0 2px 1px rgba(200,240,255,0.6) inset;
+	border: 1px solid #fff;
+	background: #b8e1fc;
+	background: -moz-linear-gradient(top,  #b8e1fc 0%, #a3d5ff 25%, #99caff 49%, #77d1ff 51%, #a2daf5 83%, #bdf3fd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8e1fc), color-stop(25%,#a3d5ff), color-stop(49%,#99caff), color-stop(51%,#77d1ff), color-stop(83%,#a2daf5), color-stop(100%,#bdf3fd));
+	background: -webkit-linear-gradient(top,  #b8e1fc 0%,#a3d5ff 25%,#99caff 49%,#77d1ff 51%,#a2daf5 83%,#bdf3fd 100%);
+	background: -o-linear-gradient(top,  #b8e1fc 0%,#a3d5ff 25%,#99caff 49%,#77d1ff 51%,#a2daf5 83%,#bdf3fd 100%);
+	background: -ms-linear-gradient(top,  #b8e1fc 0%,#a3d5ff 25%,#99caff 49%,#77d1ff 51%,#a2daf5 83%,#bdf3fd 100%);
+	background: linear-gradient(to bottom,  #b8e1fc 0%,#a3d5ff 25%,#99caff 49%,#77d1ff 51%,#a2daf5 83%,#bdf3fd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e1fc', endColorstr='#bdf3fd',GradientType=0 );
+}
+
+.newheader_menu a {text-decoration: none;}
+
+.newheader_menu .top,.menuleft_categoryoutbox .top{color:#3eadcd;	background:#e0f0f4;	border:1px solid #3eadcd;}
+.newheader_menu .djs,.menuleft_categoryoutbox .djs{color:#3e82cd;	background:#e0eaf4;	border:1px solid #3e82cd;}
+.newheader_menu .sof,.menuleft_categoryoutbox .sof{color:#3e57cd;	background:#e0e4f4;	border:1px solid #3e57cd;}
+
+.newheader_menu .mus,.menuleft_categoryoutbox .mus{color:#503ecd;	background:#e2e0f4;	border:1px solid #503ecd;}
+
+.newheader_menu .dgz,.menuleft_categoryoutbox .dgz{color:#503ecd;	background:#e2e0f4;	border:1px solid #503ecd;}
+.newheader_menu .dmc,.menuleft_categoryoutbox .dmc{color:#7b3ecd;	background:#e8e0f4;	border:1px solid #7b3ecd;}
+.newheader_menu .hob,.menuleft_categoryoutbox .hob{color:#a63ecd;	background:#eee0f4;	border:1px solid #a63ecd;}
+.newheader_menu .cos,.menuleft_categoryoutbox .cos{color:#cd3ec9;	background:#f4e0f4;	border:1px solid #cd3ec9;}
+.newheader_menu .gir,.menuleft_categoryoutbox .gir{color:#cd3e9e;	background:#f4e0ee;	border:1px solid #cd3e9e;}
+.newheader_menu .apg,.menuleft_categoryoutbox .apg{color:#cd3e73;	background:#f4e0e8;	border:1px solid #cd3e73;}
+.newheader_menu .dpg,.menuleft_categoryoutbox .dpg{color:#cd3e48;	background:#f4e0e2;	border:1px solid #cd3e48;}
+.newheader_menu .avd,.menuleft_categoryoutbox .avd{color:#db6642;	background:#f9e8e4;	border:1px solid #db6642;}
+.newheader_menu .adg,.menuleft_categoryoutbox .adg{color:#db6642;	background:#f9e8e4;	border:1px solid #db6642;}
+.newheader_menu .cmi,.menuleft_categoryoutbox .cmi{color:#f18a07;	background:#f8f4e9;	border:1px solid #f18a07;}
+.newheader_menu .exp,.menuleft_categoryoutbox .exp{color:#caab00;	background:#f8f6e9;	border:1px solid #caab00;}
+.newheader_menu .ran,.menuleft_categoryoutbox .ran{color:#75c714;	background:#f3fbec;	border:1px solid #75c714;}
+.newheader_menu .clo,.menuleft_categoryoutbox .clo{color:#3e82cd;	background:#e0eaf4;	border:1px solid #3e82cd;}
+
+
+.newheader_menu .top:hover,.menuleft_categoryoutbox .top:hover{color:#fff;	background:#52c7dd;	border:1px solid #3eadcd;}
+.newheader_menu .djs:hover,.menuleft_categoryoutbox .djs:hover{color:#fff;	background:#52aadd;	border:1px solid #3e82cd;}
+.newheader_menu .sof:hover,.menuleft_categoryoutbox .sof:hover{color:#fff;	background:#5273dd;	border:1px solid #3e57cd;}
+.newheader_menu .mus:hover,.menuleft_categoryoutbox .mus:hover{color:#fff;	background:#6a52dd;	border:1px solid #503ecd;}
+.newheader_menu .dgz:hover,.menuleft_categoryoutbox .dgz:hover{color:#fff;	background:#6a52dd;	border:1px solid #503ecd;}
+.newheader_menu .dmc:hover,.menuleft_categoryoutbox .dmc:hover{color:#fff;	background:#a352dd;	border:1px solid #7b3ecd;}
+.newheader_menu .hob:hover,.menuleft_categoryoutbox .hob:hover{color:#fff;	background:#c352dd;	border:1px solid #a63ecd;}
+.newheader_menu .cos:hover,.menuleft_categoryoutbox .cos:hover{color:#fff;	background:#dd52da;	border:1px solid #cd3ec9;}
+.newheader_menu .gir:hover,.menuleft_categoryoutbox .gir:hover{color:#fff;	background:#dd52bd;	border:1px solid #cd3e9e;}
+.newheader_menu .apg:hover,.menuleft_categoryoutbox .apg:hover{color:#fff;	background:#dd5298;	border:1px solid #cd3e73;}
+.newheader_menu .dpg:hover,.menuleft_categoryoutbox .dpg:hover{color:#fff;	background:#dd525f;	border:1px solid #cd3e48;}
+.newheader_menu .avd:hover,.menuleft_categoryoutbox .avd:hover{color:#fff;	background:#e78757;	border:1px solid #db6642;}
+.newheader_menu .adg:hover,.menuleft_categoryoutbox .adg:hover{color:#fff;	background:#e78757;	border:1px solid #db6642;}
+.newheader_menu .cmi:hover,.menuleft_categoryoutbox .cmi:hover{color:#fff;	background:#f1a30b;	border:1px solid #f18a07;}
+.newheader_menu .exp:hover,.menuleft_categoryoutbox .exp:hover{color:#fff;	background:#d1b51a;	border:1px solid #caab00;}
+.newheader_menu .ran:hover,.menuleft_categoryoutbox .ran:hover{color:#fff;	background:#8ed924;	border:1px solid #75c714;}
+.newheader_menu .clo:hover,.menuleft_categoryoutbox .clo:hover{color:#fff;	background:#52aadd;	border:1px solid #3e82cd;}
+
+
+#hd-bottom{
+	margin-top: 0px;
+	padding:6px 0 3px 0;
+	background: #4868a8;
+	background: -moz-linear-gradient(top,  #4868a8 0%, #3d61aa 18%, #2e549b 19%, #1a469d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4868a8), color-stop(18%,#3d61aa), color-stop(19%,#2e549b), color-stop(100%,#1a469d));
+	background: -webkit-linear-gradient(top,  #4868a8 0%,#3d61aa 18%,#2e549b 19%,#1a469d 100%);
+	background: -o-linear-gradient(top,  #4868a8 0%,#3d61aa 18%,#2e549b 19%,#1a469d 100%);
+	background: -ms-linear-gradient(top,  #4868a8 0%,#3d61aa 18%,#2e549b 19%,#1a469d 100%);
+	background: linear-gradient(to bottom,  #4868a8 0%,#3d61aa 18%,#2e549b 19%,#1a469d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4868a8', endColorstr='#1a469d',GradientType=0 );
+}
+#header a:hover{
+	color:#fff;
+}
+
+
+#hd-bottom{
+	margin-top: 0px;
+	padding:6px 0 3px 0;
+	background: #fff;
+}
+
+
+.hd_logo{
+	width: 200px;
+	height: 60px;
+	margin: 0;
+}
+.hd_bannernew {
+	width: 420px;
+	float: left;
+	height: 60px;
+	text-align: center;
+	margin: 0 0 8px 5px;
+}
+.hd_info2new {
+	width: 400px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+.hd_post_infonew{
+	float: left;
+	width: 15%;
+	border: 1px solid #D0DBF4;
+	margin: 0 1% 0 0;
+}
+.post_infonew1, .post_infonew2, .post_infonew3, .post_infonew4{
+	font-size: 14px;
+	padding: 3px 0px 3px 4px;
+}
+.post_infonew2{
+	color: #444;
+}
+.post_infonew3{
+	color: #449;
+}
+.post_infonew4{
+	color: #444;
+	text-align: right;
+	padding: 3px 4px;
+}
+
+
+
+
+.login_cartbox,.login_cartbox2{
+	display: block;
+	float: right;
+	height: 2em;
+	line-height: 2em;
+	font-weight: bold;
+	font-size: 13px;
+	color: #2E56A5;
+	text-shadow: -1px -1px 1px rgba(255,255,255,0.5),1px 1px 1px rgba(0,0,190,0.1);
+	text-align: center;
+	margin:0;
+	padding:1px 5px;
+}
+.login_cartbox{
+	width:90px;
+	border-left: 6px solid #2E56A5;
+	background: #d5dbed;
+	background: -moz-linear-gradient(top,  #d5dbed 0%, #ffffff 2%, #e1e6f2 5%, #edf0f7 98%, #d5dbed 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d5dbed), color-stop(2%,#ffffff), color-stop(5%,#e1e6f2), color-stop(98%,#edf0f7), color-stop(100%,#d5dbed));
+	background: -webkit-linear-gradient(top,  #d5dbed 0%,#ffffff 2%,#e1e6f2 5%,#edf0f7 98%,#d5dbed 100%);
+	background: -o-linear-gradient(top,  #d5dbed 0%,#ffffff 2%,#e1e6f2 5%,#edf0f7 98%,#d5dbed 100%);
+	background: -ms-linear-gradient(top,  #d5dbed 0%,#ffffff 2%,#e1e6f2 5%,#edf0f7 98%,#d5dbed 100%);
+	background: linear-gradient(to bottom,  #d5dbed 0%,#ffffff 2%,#e1e6f2 5%,#edf0f7 98%,#d5dbed 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5dbed', endColorstr='#d5dbed',GradientType=0 );
+}
+.login_cartbox2{
+	width:150px;
+	border-left: 6px solid #2E56A5;
+	background: #d5dbed;
+	background: -moz-linear-gradient(top,  #d5dbed 0%, #ffffff 2%, #e1e6f2 5%, #edf0f7 98%, #d5dbed 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d5dbed), color-stop(2%,#ffffff), color-stop(5%,#e1e6f2), color-stop(98%,#edf0f7), color-stop(100%,#d5dbed));
+	background: -webkit-linear-gradient(top,  #d5dbed 0%,#ffffff 2%,#e1e6f2 5%,#edf0f7 98%,#d5dbed 100%);
+	background: -o-linear-gradient(top,  #d5dbed 0%,#ffffff 2%,#e1e6f2 5%,#edf0f7 98%,#d5dbed 100%);
+	background: -ms-linear-gradient(top,  #d5dbed 0%,#ffffff 2%,#e1e6f2 5%,#edf0f7 98%,#d5dbed 100%);
+	background: linear-gradient(to bottom,  #d5dbed 0%,#ffffff 2%,#e1e6f2 5%,#edf0f7 98%,#d5dbed 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5dbed', endColorstr='#d5dbed',GradientType=0 );
+}
+.login_carttmp_moeny{
+	font-size: 12px;
+	color: #4264A9;
+}
+.login_cartbox:hover, .login_cartbox2:hover{
+	background: #a1b4ea;
+	background: -moz-linear-gradient(top,  #a1b4ea 0%, #ffffff 2%, #bfceef 5%, #d2dcf4 98%, #b6c3ea 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a1b4ea), color-stop(2%,#ffffff), color-stop(5%,#bfceef), color-stop(98%,#d2dcf4), color-stop(100%,#b6c3ea));
+	background: -webkit-linear-gradient(top,  #a1b4ea 0%,#ffffff 2%,#bfceef 5%,#d2dcf4 98%,#b6c3ea 100%);
+	background: -o-linear-gradient(top,  #a1b4ea 0%,#ffffff 2%,#bfceef 5%,#d2dcf4 98%,#b6c3ea 100%);
+	background: -ms-linear-gradient(top,  #a1b4ea 0%,#ffffff 2%,#bfceef 5%,#d2dcf4 98%,#b6c3ea 100%);
+	background: linear-gradient(to bottom,  #a1b4ea 0%,#ffffff 2%,#bfceef 5%,#d2dcf4 98%,#b6c3ea 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1b4ea', endColorstr='#b6c3ea',GradientType=0 );
+}
+
+
+#seek{
+	width: 99%;
+	margin:0px;
+	text-align:right;
+	margin: 3px 0;
+	padding: 0;
+}
+.newheader_menu2{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.newheader_menu2 a{
+	color:#fff;
+}
+.newheader_menu2 a:hover{
+	color:#fff;
+}
+#seek form {
+	width: 100%;
+	margin: 0 auto;
+}
+.inputsubmittxt{
+	width:260px;
+	height: 17px;
+	line-height: 17px;
+	font-size: 12px;
+	color:#555;
+	border: 1px solid #999;
+	border-radius: 0;
+	background: #F7F8FC;
+	margin:0;
+	padding:1px 5px;
+}
+.inputsubmittxt:hover{
+	border: 1px solid #ccc;
+	background: #fff;
+}
+.inputsubmitbtn{
+	font-size: 12px;
+	color:#fff;
+	text-align: center;
+	box-shadow: 0 0 3px 1px rgba(90,140,255,0.6) inset;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	margin:0 2px;
+	padding:2px 5px;
+	border: 1px solid #02358C;
+	background: #2c55a5;
+	background: -moz-linear-gradient(top,  #2c55a5 0%, #2853a8 50%, #1b4999 51%, #08398e 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c55a5), color-stop(50%,#2853a8), color-stop(51%,#1b4999), color-stop(100%,#08398e));
+	background: -webkit-linear-gradient(top,  #2c55a5 0%,#2853a8 50%,#1b4999 51%,#08398e 100%);
+	background: -o-linear-gradient(top,  #2c55a5 0%,#2853a8 50%,#1b4999 51%,#08398e 100%);
+	background: -ms-linear-gradient(top,  #2c55a5 0%,#2853a8 50%,#1b4999 51%,#08398e 100%);
+	background: linear-gradient(to bottom,  #2c55a5 0%,#2853a8 50%,#1b4999 51%,#08398e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c55a5', endColorstr='#08398e',GradientType=0 );
+}
+
+
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.inputsubmitbtn{padding:4px 5px 3px 5px;}
+	}
+
+
+
+.seekDetail_a{
+	display: block;
+	float: right;
+	height: 17px;
+	line-height: 17px;
+	font-size: 12px;
+	color:#fff;
+	text-align: center;
+	box-shadow: 0 0 3px 1px rgba(90,140,255,0.8) inset;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	margin:0;
+	padding:1px 5px;
+	border: 1px solid #02358C;
+	background: #2c55a5;
+	background: -moz-linear-gradient(top,  #2c55a5 0%, #2853a8 50%, #1b4999 51%, #08398e 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c55a5), color-stop(50%,#2853a8), color-stop(51%,#1b4999), color-stop(100%,#08398e));
+	background: -webkit-linear-gradient(top,  #2c55a5 0%,#2853a8 50%,#1b4999 51%,#08398e 100%);
+	background: -o-linear-gradient(top,  #2c55a5 0%,#2853a8 50%,#1b4999 51%,#08398e 100%);
+	background: -ms-linear-gradient(top,  #2c55a5 0%,#2853a8 50%,#1b4999 51%,#08398e 100%);
+	background: linear-gradient(to bottom,  #2c55a5 0%,#2853a8 50%,#1b4999 51%,#08398e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c55a5', endColorstr='#08398e',GradientType=0 );
+}
+.inputsubmitbtn:hover, .seekDetail_a:hover{
+	box-shadow: 0 0 2px 1px rgba(200,240,255,0.6) inset;
+	border: 1px solid #fff;
+	background: #b8e1fc;
+	background: -moz-linear-gradient(top,  #b8e1fc 0%, #a3d5ff 25%, #99caff 49%, #77d1ff 51%, #a2daf5 83%, #bdf3fd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8e1fc), color-stop(25%,#a3d5ff), color-stop(49%,#99caff), color-stop(51%,#77d1ff), color-stop(83%,#a2daf5), color-stop(100%,#bdf3fd));
+	background: -webkit-linear-gradient(top,  #b8e1fc 0%,#a3d5ff 25%,#99caff 49%,#77d1ff 51%,#a2daf5 83%,#bdf3fd 100%);
+	background: -o-linear-gradient(top,  #b8e1fc 0%,#a3d5ff 25%,#99caff 49%,#77d1ff 51%,#a2daf5 83%,#bdf3fd 100%);
+	background: -ms-linear-gradient(top,  #b8e1fc 0%,#a3d5ff 25%,#99caff 49%,#77d1ff 51%,#a2daf5 83%,#bdf3fd 100%);
+	background: linear-gradient(to bottom,  #b8e1fc 0%,#a3d5ff 25%,#99caff 49%,#77d1ff 51%,#a2daf5 83%,#bdf3fd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e1fc', endColorstr='#bdf3fd',GradientType=0 );
+}
+
+
+-->
+</style>
+
+
+
+	<div class="hd_linenew">
+		<div class="hd_view_mode">
+			
+		</div>
+
+		<div class="hd_logo">
+			<a href="http://web.doujindou.com/top.html"><img src="/img08/logo.png" alt="同人誌・同人ソフト・抱き枕カバー|同人堂"></a>
+		</div>
+
+		<div class="hd_info2new">
+			<div class="hd_login">
+				<a class="login_cartbox2" href="http://web.doujindou.com/cart/">カートを見る　<span class="login_carttmp_moeny">0円</span></a>
+				<a class="login_cartbox" href="https://doujindou.com/member/login.php?u=L21lbWJlci9teXBhZ2UucGhw">マイページ</a>
+				<a class="login_cartbox" href="https://doujindou.com/member/login.php?u=L3NlZWsvZGV0YWlsLnBocD9mPXNlZWsmdGl0bGU9JmNpcmNsZT0md3JpdGVyPSU4RSVFNyU4QyU4RSU4RSU2QSU4QiU0RCZjYXRlZ29yeT0mY29tbWVudD0mZXZlbnQ9JmRpdmlzaW9uX2FnZT1hbGwmZGl2aXNpb25fc2V4PWFsbCZraW5kcz1hbGwmc3RvY2s9MQ==">ログイン</a>
+			</div>
+
+			<div id="seek">
+				<div class="newheader_menu2">
+					<form method="get" action="http://web.doujindou.com/seek/">
+					<input class="inputsubmittxt" name="word" value="" type="text"><input class="inputsubmitbtn" value="検索" type="submit">
+					<a class="seekDetail_a" href="http://web.doujindou.com/seek/detail.php">詳細検索</a>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!--★★★★PCTOPバナー★★★★-->
+				<!--★★★★PCTOPバナー★★★★-->
+		<div class="hd_bannernew">
+		<!--
+		<a href="http://web.doujindou.com/info/souryou130428.html"><img src="http://web.doujindou.com/img08/feature/1304comic1/pctopban20140428.jpg"></a><br>
+		<a href="http://web.doujindou.com/info/1307pointdouble.html"><img src="http://web.doujindou.com/img08/top_ban.jpg"></a><br>
+		<a href="http://web.doujindou.com/info/130417singekisale.html"><img src="http://web.doujindou.com/img08/feature/1304singeki/top_ban.jpg"></a><br>
+		<a href="http://web.doujindou.com/seek/index.php?k=goods&cla=pillow_slip&r=1"><img src="/img08/ima_daki.gif"></a><br>
+		<a href="http://web.doujindou.com/info/1312zaikosale.html"><img src="http://web.doujindou.com/img08/feature/1312zs/pctop_ban.jpg"></a><br>
+		<a href="http://web.doujindou.com/seek/index.php?cla=pillow_slip"><img src="http://web.doujindou.com/img08/pickup/pctop_ban.jpg"></a><br>
+	
+		<a href="http://web.doujindou.com/info/kounyutokuten1408.php"><img src="http://web.doujindou.com/img08/pickup/pctop_ban1408.jpg" width="98%"></a><br>	-->
+
+		<a href="http://blweb.doujindou.com/top.html" target="_blank"><img src="http://web.doujindou.com/img08/pickup/l_top2.jpg" width="98%"></a><br>
+
+		<!--
+		<object data="/img08/topban.swf" type="application/x-shockwave-flash" id="movie" width="400" height="60">
+			<param name="movie" value="/img08/topban.swf" />
+		</object>
+		-->
+		</div>
+		<br clear="all">
+	</div><div style="clear:both;"></div>
+
+
+
+	<div id="hd-bottomnew">
+		<div class="newheader_menu">
+			<a class="top" href="http://web.doujindou.com/top.html">TOP</a>
+			<a class="djs" href="http://web.doujindou.com/category/k_doujinshi/">同人誌</a>
+			<a class="sof" href="http://web.doujindou.com/category/k_doujinsoft/">同人ソフト</a>
+			<a class="mus" href="http://web.doujindou.com/category/k_music/">同人音楽</a>
+			<a class="dgz" href="http://web.doujindou.com/category/k_goods/">同人グッズ</a>
+
+			<a class="dmc" href="http://web.doujindou.com/seek/index.php?cla=pillow_slip">抱き枕カバー</a>
+			<a class="exp" href="http://web.doujindou.com/category/k_pcgame/">PCゲーム</a>
+			<a class="apg" href="http://web.doujindou.com/category/k_animedvd/">アニメDVD</a>
+			<a class="dpg" href="http://web.doujindou.com/category/k_dvdpg/">PlayersGame</a>
+			<a class="hob" href="http://web.doujindou.com/category/k_goods3/">ホビー</a>
+			<a class="clo" href="http://web.doujindou.com/category/k_clothes/">コスプレ衣装</a>
+			<a class="cos" href="http://web.doujindou.com/category/k_cos/">コスプレ</a>
+
+			<a class="adg" href="http://web.doujindou.com/category/k_catalog/">カタログ</a>
+			<a class="ran" href="http://web.doujindou.com/top/ranking.php">ランキング</a>
+			<br clear="all">
+		</div>
+	</div>
+
+
+
+	</div>
+	<div id="main">
+		<div id="main-inner">
+
+
+	<div class="top-new">
+		<h2>検索結果<span style="font-size:11px;color: #4577AD;">&nbsp;11件中11件表示</span></h2>
+			<div class="websettingmenu">
+		表示件数変更：
+		<a class="websettingmenu_off" href="../websetting.php?websettingnum=25">25</a>
+		<a class="websettingmenu_off" href="../websetting.php?websettingnum=50">50</a>
+		<a class="websettingmenu_off" href="../websetting.php?websettingnum=100">100</a>
+
+		　表示方法変更：
+		<a class="websettingmenu_off" href="../websetting.php?websettingtype=1">表紙</a>
+		<a class="websettingmenu_off" href="../websetting.php?websettingtype=2">サムネイル</a>
+
+	</div>
+		<div class="result-num">
+			
+		</div>
+		
+		<div class='list4'><center>
+	<div class="top_newbox">
+	<div class="top_newicon_img"><span class='icon_doujinshi'>同人誌</span><span class="r18">18禁</span><span class="male">男性</span></div>
+	<div class="top_newboximg"><a href="/view/65683.html"><img src="http://doujindou.com/img/I/8/9/0/8902e3140c7562b0913f5770eb285c32/l_top.jpg" alt="すいーとみるくを召し上がれ2"></a></div>
+		<div class="top_newitem_name"><a href="/view/65683.html">すいーとみるくを召し上がれ2</a></div>
+		<div class="top_newcircle_name"><a href="/circle/c_5573/">かみしき</a></div>
+		<div class='b_price'>756円</div>
+	</div>
+	<div class="top_newbox">
+	<div class="top_newicon_img"><span class='icon_doujinshi'>同人誌</span><span class="r18">18禁</span><span class="male">男性</span></div>
+	<div class="top_newboximg"><a href="/view/65682.html"><img src="http://doujindou.com/img/I/7/8/0/780f990b5b7e474fddac1f207b7fa969/l_top.jpg" alt="大鳳これくしょん"></a></div>
+		<div class="top_newitem_name"><a href="/view/65682.html">大鳳これくしょん</a></div>
+		<div class="top_newcircle_name"><a href="/circle/c_5573/">かみしき</a></div>
+		<div class='b_price'>1,620円</div>
+	</div>
+	<div class="top_newbox">
+	<div class="top_newicon_img"><span class='icon_doujinshi'>同人誌</span><span class="r18">18禁</span><span class="male">男性</span></div>
+	<div class="top_newboximg"><a href="/view/64704.html"><img src="http://doujindou.com/img/I/f/d/c/fdc43c7197b903c03ce9788842d3d3aa/l_top.jpg" alt="すいーとみるくを召し上がれ"></a></div>
+		<div class="top_newitem_name"><a href="/view/64704.html">すいーとみるくを召し上がれ</a></div>
+		<div class="top_newcircle_name"><a href="/circle/c_5573/">かみしき</a></div>
+		<div class='b_price'>594円</div>
+	</div>
+	<div class="top_newbox">
+	<div class="top_newicon_img"><span class='icon_doujinshi'>同人誌</span><span class="r18">18禁</span><span class="male">男性</span></div>
+	<div class="top_newboximg"><a href="/view/61867.html"><img src="http://doujindou.com/img/I/f/4/e/f4e46ba9669d3a459c71e93e431607b7/l_top.jpg" alt="大鳳ちゃんは発情期"></a></div>
+		<div class="top_newitem_name"><a href="/view/61867.html">大鳳ちゃんは発情期</a></div>
+		<div class="top_newcircle_name"><a href="/circle/c_5573/">かみしき</a></div>
+		<div class='b_price'>756円</div>
+	</div>
+<br clear='all'></center></div>
+<div class='list4'><center>
+	<div class="top_newbox">
+	<div class="top_newicon_img"><span class='icon_doujinshi'>同人誌</span><span class="r18">18禁</span><span class="male">男性</span></div>
+	<div class="top_newboximg"><a href="/view/60852.html"><img src="http://doujindou.com/img/I/4/6/f/46f7dac067c24f428fe0cb4c4cea9f5e/l_top.jpg" alt="花嫁は深海大鳳ちゃん"></a></div>
+		<div class="top_newitem_name"><a href="/view/60852.html">花嫁は深海大鳳ちゃん</a></div>
+		<div class="top_newcircle_name"><a href="/circle/c_5573/">かみしき</a></div>
+		<div class='b_price'>756円</div>
+	</div>
+	<div class="top_newbox">
+	<div class="top_newicon_img"><span class='icon_doujinshi'>同人誌</span><span class="r18">18禁</span><span class="male">男性</span></div>
+	<div class="top_newboximg"><a href="/view/60851.html"><img src="http://doujindou.com/img/I/3/0/e/30e03b2e226874421fab6fdfc512aa89/l_top.jpg" alt="カンムス×セイフクH"></a></div>
+		<div class="top_newitem_name"><a href="/view/60851.html">カンムス×セイフクH</a></div>
+		<div class="top_newcircle_name"><a href="/circle/c_5573/">かみしき</a></div>
+		<div class='b_price'>594円</div>
+	</div>
+	<div class="top_newbox">
+	<div class="top_newicon_img"><span class='icon_doujinshi'>同人誌</span><span class="r18">18禁</span><span class="male">男性</span></div>
+	<div class="top_newboximg"><a href="/view/59555.html"><img src="http://doujindou.com/img/I/a/c/1/ac18fa710ccfcecb855d10777186baec/l_top.jpg" alt="ゼリービーンズ"></a></div>
+		<div class="top_newitem_name"><a href="/view/59555.html">ゼリービーンズ</a></div>
+		<div class="top_newcircle_name"><a href="/circle/c_5573/">かみしき</a></div>
+		<div class='b_price'>1,620円</div>
+	</div>
+	<div class="top_newbox">
+	<div class="top_newicon_img"><span class='icon_doujinshi'>同人誌</span><span class="r18">18禁</span><span class="male">男性</span></div>
+	<div class="top_newboximg"><a href="/view/59424.html"><img src="http://doujindou.com/img/I/d/5/9/d597e048314596beebb1dba1248fc184/l_top.jpg" alt="大鳳が深海棲艦に堕チタラ"></a></div>
+		<div class="top_newitem_name"><a href="/view/59424.html">大鳳が深海棲艦に堕チタラ</a></div>
+		<div class="top_newcircle_name"><a href="/circle/c_5573/">かみしき</a></div>
+		<div class='b_price_sold'>品切れ</div>
+	</div>
+<br clear='all'></center></div>
+<div class='list4'><center>
+	<div class="top_newbox">
+	<div class="top_newicon_img"><span class='icon_doujinshi'>同人誌</span><span class="r18">18禁</span><span class="male">男性</span></div>
+	<div class="top_newboximg"><a href="/view/59423.html"><img src="http://doujindou.com/img/I/b/f/3/bf3006020313e7c39789d2171f4e98ab/l_top.jpg" alt="大鳳ちゃんとかくれんぼ"></a></div>
+		<div class="top_newitem_name"><a href="/view/59423.html">大鳳ちゃんとかくれんぼ</a></div>
+		<div class="top_newcircle_name"><a href="/circle/c_5573/">かみしき</a></div>
+		<div class='b_price_sold'>品切れ</div>
+	</div>
+	<div class="top_newbox">
+	<div class="top_newicon_img"><span class='icon_doujinshi'>同人誌</span><span class="r18">18禁</span><span class="male">男性</span></div>
+	<div class="top_newboximg"><a href="/view/59422.html"><img src="http://doujindou.com/img/I/7/f/1/7f1019eb009c378fa88fda7791ef14c6/l_top.jpg" alt="大鳳ちゃんとこたつみかん"></a></div>
+		<div class="top_newitem_name"><a href="/view/59422.html">大鳳ちゃんとこたつみかん</a></div>
+		<div class="top_newcircle_name"><a href="/circle/c_5573/">かみしき</a></div>
+		<div class='b_price_sold'>品切れ</div>
+	</div>
+	<div class="top_newbox">
+	<div class="top_newicon_img"><span class='icon_doujinshi'>同人誌</span><span class="r18">18禁</span><span class="male">男性</span></div>
+	<div class="top_newboximg"><a href="/view/59421.html"><img src="http://doujindou.com/img/I/9/8/c/98c0061232e69721a6bad0927408bc9e/l_top.jpg" alt="大鳳ちゃんとばんそーこー"></a></div>
+		<div class="top_newitem_name"><a href="/view/59421.html">大鳳ちゃんとばんそーこー</a></div>
+		<div class="top_newcircle_name"><a href="/circle/c_5573/">かみしき</a></div>
+		<div class='b_price_sold'>品切れ</div>
+	</div>
+<br clear='all'></center></div>
+
+		
+		<div class="bottom-navi">
+			<img src='/img08/bottom-navi-l.gif'>前のリスト <span>-</span> 次のリスト<img src='/img08/bottom-navi-r.gif'>
+		</div>
+	</div>
+
+
+		</div>
+		<div id="menu-left">
+
+
+<!-- 左部 -->
+
+<style TYPE="text/css">
+<!--
+.menuleft_categoryabox{
+	float: left;
+	width: 49%;
+	margin: 0 0 3px 1px;
+	border-radius: 2px;
+}
+.menuleft_categoryabox img{
+	width: 100%;
+}
+.menuleft_categoryleftimg{
+	width: 100%;
+}
+.menuleft_categoryrtxt{
+	z-index: 100;
+	position: relative;
+	width: 90%;
+	text-align: center;
+	border-radius: 6px;
+	box-shadow: 2px 2px 3px rgba(190, 190, 230, 0.18),0 0 2px 1px rgba(255,255,255,0.8) inset;
+	margin: 0 auto -1.7em auto;
+	padding: 2px 0;
+}
+.menuleft_categoryoutbox a{
+	text-decoration: none;
+}
+.boxspacer{
+	padding: 1px 0 0 0;
+}
+.menuleft_categoryabox .top{color:#3eadcd;	background:#e0f0f4;	border:1px solid #3eadcd;}
+.menuleft_categoryabox .djs{color:#3994cc;	background:#e0ecf4;	border:1px solid #3994cc;}
+.menuleft_categoryabox .sof{color:#3c39cc;	background:#e1e0f4;	border:1px solid #3c39cc;}
+.menuleft_categoryabox .dgz{color:#7439cc;	background:#f4e9f8;	border:1px solid #7439cc;}
+.menuleft_categoryabox .dmc{color:#9639cc;	background:#f6e9f8;	border:1px solid #9639cc;}
+.menuleft_categoryabox .cos{color:#d93cbd;	background:#f8e9f5;	border:1px solid #d93cbd;}
+.menuleft_categoryabox .gir{color:#d93c95;	background:#f8e9f1;	border:1px solid #d93c95;}
+.menuleft_categoryabox .avd{color:#d93c68;	background:#f8e9ea;	border:1px solid #d93c68;}
+.menuleft_categoryabox .adg{color:#d2534d;	background:#fcf0ee;	border:1px solid #d2534d;}
+.menuleft_categoryabox .cmi{color:#f18a07;	background:#f8f4e9;	border:1px solid #f18a07;}
+.menuleft_categoryabox .exp{color:#caab00;	background:#f8f6e9;	border:1px solid #caab00;}
+.menuleft_categoryabox .ran{color:#75c714;	background:#f3fbec;	border:1px solid #75c714;}
+
+.menuleft_categoryrtxt_allage{
+	width: 98%;
+	text-align: center;
+	border-radius: 6px;
+	box-shadow: 2px 2px 3px rgba(190, 190, 230, 0.18),0 0 2px 1px rgba(255,255,255,0.8) inset;
+	margin: 1px 0.5%;
+	padding: 2px 0;
+}
+
+-->
+</style>
+
+
+<div class="menu-box">
+	<div class="menu-title">入荷日別新作一覧</div>
+	<div class="arrowlistmenu">
+		<ul>
+			<li><a href='http://web.doujindou.com/new/20170714/'>2017/07/14</a></li>
+<li><a href='http://web.doujindou.com/new/20170715/'>2017/07/15</a></li>
+<li><a href='http://web.doujindou.com/new/20170718/'>2017/07/18</a></li>
+<li><a href='http://web.doujindou.com/new/20170719/'>2017/07/19</a></li>
+<li><a href='http://web.doujindou.com/new/20170720/'>2017/07/20</a></li>
+<li><a href='http://web.doujindou.com/new/20170721/'>2017/07/21</a></li>
+
+			<li><a href="http://web.doujindou.com/division/reserve/">予約作品</a></li>
+			<li><a href="http://web.doujindou.com/pickup/">ピックアップ作品</a></li>
+		</ul>
+	</div>
+</div>
+
+
+			
+
+		<div class="menu-box">
+		<div class="menu-title">カテゴリートップ</div>
+		<div class="menuleft_categoryoutbox">
+
+			<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/doujinshi.php"		><div class="menuleft_categoryrtxt djs">同人誌</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/3/2/8/32806098d98db624e1a35ad1f9d0ab39/150.jpg' alt='痴漢囮捜査官キョウカ'></div></a>
+
+			<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/goods.php"			><div class="menuleft_categoryrtxt dgz">同人グッズ</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/2/a/0/2a040b83b92d03ddd234195b3b5f0cb5/150.jpg' alt='アリスプレイマット'></div></a>
+
+			<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/doujinsoft.php"		><div class="menuleft_categoryrtxt sof">同人ソフト</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/c/2/6/c2602dd42178714ba528e2ec8e2dad42/150.jpg' alt='ワルキューレAスレイブ'></div></a>
+
+			<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/dakimakura_cover.php"><div class="menuleft_categoryrtxt dmc">抱き枕カバー</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/d/8/7/d877b256604ead499fcbdcf743c0b7b7/150.jpg' alt='水着スカサハ抱き枕カバー'></div></a>
+
+			<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/music.php"		><div class="menuleft_categoryrtxt mus">同人音楽</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/8/7/9/8793f1f964fe20cf3aec0dd857678c90/150.jpg' alt='第２幕 協奏曲「月に叢雲華に風」 SIDE A'></div></a>
+
+			<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/pcgame.php"				><div class="menuleft_categoryrtxt avd">PCゲーム</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/e/6/4/e646e2fec7dcbe33111f4481a96523af/150.jpg' alt='D.C.Ⅲ DreamDays～ダ･カーポⅢ～ドリームデイズ　初回限定版'></div></a>
+
+			<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/animedvd.php"			><div class="menuleft_categoryrtxt apg">アニメDVD/BD</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/0/0/9/0093d33617e8d18786c3e3b5bae009a3/150.jpg' alt='【ｱﾆﾒ】オナッ子お世話係ゆいたん [DVD Edition]（HBXD-146）'></div></a>
+
+			<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/dvdpg.php"				><div class="menuleft_categoryrtxt dpg">PlayersGame</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/e/4/c/e4cbdd8c34e9c947ff33b13c64482dca/150.jpg' alt='【DVD-PG】ツゴウノイイアイドル side:浅香明菜 [PG EDITION]（HCDP-044）'></div></a>
+
+			<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/cosp.php"			><div class="menuleft_categoryrtxt cos">コスプレ</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/b/7/f/b7fad16c8cbf064d8a1293aec959bbea/150.jpg' alt='鹿島さんのRQこすはエロすぎじゃない？'></div></a>
+
+			<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/hobby.php"		><div class="menuleft_categoryrtxt avd">ホビー</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/e/4/5/e45dd49c6ac439403afd4ff043af2870/150.jpg' alt='東方Project TCG汎用プレイマット 博麗霊夢 Ver.3'></div></a>
+
+			<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/clother.php"			><div class="menuleft_categoryrtxt cos">コスプレ衣装</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/6/5/b/65b4001c749b12b03e60b88419f3513b/150.jpg' alt='（男性XXL）アリス・マーガトロイド　コスプレ衣装　6点セット'></div></a>
+
+		<a class="menuleft_categoryabox" href="http://web.doujindou.com/top/agoods.php"			><div class="menuleft_categoryrtxt adg">アダルトグッズ</div><div class="menuleft_categoryleftimg"><img src='http://doujindou.com/img/I/e/f/0/ef062084a1c4a3584af1d4f8e514ea50/150.jpg' alt='きつまんっ！'></div></a>
+
+			<br clear="all">
+		</div>
+	</div>
+	
+
+
+<div class="menu-box">
+	<div class="menu-title">メニュー</div>
+</div>
+
+<div class="arrowlistmenu">
+	<div class="menuheader expandable">同人堂メニュー</div>
+	<ul class="categoryitems">
+		<li><a href='http://web.doujindou.com/info/first.html'>同人堂ご利用案内</a></li>
+<li><a href='https://doujindou.com/member/login.php'>ログイン</a></li>
+<li><a href='http://web.doujindou.com/info/member.html'>会員について</a></li>
+<li><a href='https://doujindou.com/member/setup.php'>会員登録</a></li>
+<li><a href='https://doujindou.com/member/career_change.php'>指定日変更</a></li>
+<li><a href='http://web.doujindou.com/info/mypage.html'>マイページについて</a></li>
+<li><a href='http://web.doujindou.com/info/mailmag_info.php'>メルマガ登録</a></li>
+<li><a href='http://web.doujindou.com/link/'>リンク集</a></li>
+<li><a href='http://web.doujindou.com/itaku/'>委託販売について</a></li>
+
+	</ul>
+	<div class="menuheader expandable">商品種別</div>
+	<ul class="categoryitems">
+		<li><a href='http://web.doujindou.com/category/k_doujinshi/'>同人誌</a></li>
+<li><a href='http://web.doujindou.com/category/k_doujinsoft/'>同人ソフト</a></li>
+<li><a href='http://web.doujindou.com/category/k_music/'>同人音楽</a></li>
+<li><a href='http://web.doujindou.com/category/k_goods/'>同人グッズ</a></li>
+<li><a href='http://web.doujindou.com/category/k_dakimakura/'>抱き枕カバー</a></li>
+<li><a href='http://web.doujindou.com/category/k_pcgame/'>PCゲーム</a></li>
+<li><a href='http://web.doujindou.com/category/k_animedvd/'>アニメDVD</a></li>
+<li><a href='http://web.doujindou.com/category/k_dvdpg/'>DVDPG</a></li>
+<li><a href='http://web.doujindou.com/category/k_goods3/'>ホビー</a></li>
+<li><a href='http://web.doujindou.com/category/k_cos/'>コスプレ</a></li>
+<li><a href='http://web.doujindou.com/category/k_clothes/'>コスプレ衣装</a></li>
+<li><a href='http://web.doujindou.com/category/k_goods2/'>アダルトグッズ</a></li>
+<li><a href='http://web.doujindou.com/category/k_catalog/'>イベントカタログ</a></li>
+
+	</ul>
+	<div class="menuheader expandable">ジャンル別</div>
+	<ul class="categoryitems">
+		<li><a href='http://web.doujindou.com/category/g_anime/'>アニメ系</a></li>
+<li><a href='http://web.doujindou.com/category/g_game/'>ゲーム系</a></li>
+<li><a href='http://web.doujindou.com/category/g_manga/'>マンガ系</a></li>
+<li><a href='http://web.doujindou.com/category/g_novel/'>ノベル系</a></li>
+<li><a href='http://web.doujindou.com/category/g_etc/'>その他</a></li>
+<li><a href='http://web.doujindou.com/category/g_original/'>オリジナル</a></li>
+<li><a href='http://web.doujindou.com/category/g_bl/'>女性向け</a></li>
+
+		<li><a href="http://web.doujindou.com/category/">　　ジャンル一覧から探す</a></li>
+	</ul>
+	<div class="menuheader expandable">イベント別新刊一覧</div>
+	<ul class="categoryitems">
+		<li><a href='http://web.doujindou.com/event/e_c1-10/'>Comic1☆10</a></li>
+<li><a href='http://web.doujindou.com/event/e_c1-9/'>Comic1☆9</a></li>
+<li><a href='http://web.doujindou.com/event/e_c1-8/'>Comic1☆8</a></li>
+<li><a href='http://web.doujindou.com/event/e_c1-7/'>Comic1☆7</a></li>
+<li><a href='http://web.doujindou.com/event/e_c1-6/'>Comic1☆6</a></li>
+<li><a href='http://web.doujindou.com/event/e_c1-5/'>Comic1☆5</a></li>
+<li><a href='http://web.doujindou.com/event/e_c1-4/'>Comic1☆4</a></li>
+<li><a href='http://web.doujindou.com/event/e_reitai12/'>第12回博麗神社例大祭</a></li>
+<li><a href='http://web.doujindou.com/event/e_reitai11/'>第11回博麗神社例大祭</a></li>
+<li><a href='http://web.doujindou.com/event/e_c89/'>冬コミ 89</a></li>
+<li><a href='http://web.doujindou.com/event/e_c88/'>夏コミ 88</a></li>
+<li><a href='http://web.doujindou.com/event/e_c87/'>冬コミ 87</a></li>
+<li><a href='http://web.doujindou.com/event/e_c86/'>夏コミ 86</a></li>
+<li><a href='http://web.doujindou.com/event/e_c85/'>冬コミ 85</a></li>
+<li><a href='http://web.doujindou.com/event/e_c84/'>夏コミ 84</a></li>
+<li><a href='http://web.doujindou.com/event/e_c83/'>冬コミ 83</a></li>
+<li><a href='http://web.doujindou.com/event/e_c82/'>夏コミ 82</a></li>
+<li><a href='http://web.doujindou.com/event/e_c81/'>冬コミ 81</a></li>
+<li><a href='http://web.doujindou.com/event/e_c80/'>夏コミ 80</a></li>
+<li><a href='http://web.doujindou.com/event/e_sc16win/'>サンクリ2016 Winter</a></li>
+<li><a href='http://web.doujindou.com/event/e_sc15au/'>サンクリ2015 Autumn</a></li>
+<li><a href='http://web.doujindou.com/event/e_sc15su/'>サンクリ2015 Summer</a></li>
+<li><a href='http://web.doujindou.com/event/e_s64/'>サンクリ 64</a></li>
+<li><a href='http://web.doujindou.com/event/e_s62/'>サンクリ 62</a></li>
+<li><a href='http://web.doujindou.com/event/e_s61/'>サンクリ 61</a></li>
+<li><a href='http://web.doujindou.com/event/e_s60/'>サンクリ 60</a></li>
+<li><a href='http://web.doujindou.com/event/e_s59/'>サンクリ 59</a></li>
+<li><a href='http://web.doujindou.com/event/e_s58/'>サンクリ 58</a></li>
+<li><a href='http://web.doujindou.com/event/e_s57/'>サンクリ 57</a></li>
+<li><a href='http://web.doujindou.com/event/e_s56/'>サンクリ 56</a></li>
+<li><a href='http://web.doujindou.com/event/e_s55/'>サンクリ 55</a></li>
+<li><a href='http://web.doujindou.com/event/e_s54/'>サンクリ 54</a></li>
+<li><a href='http://web.doujindou.com/event/e_s53/'>サンクリ 53</a></li>
+<li><a href='http://web.doujindou.com/event/e_s52/'>サンクリ 52</a></li>
+<li><a href='http://web.doujindou.com/event/e_s51/'>サンクリ 51</a></li>
+<li><a href='http://web.doujindou.com/event/e_csp6/'>コミスペ 6</a></li>
+<li><a href='http://web.doujindou.com/event/e_chara1-1/'>character1 2014</a></li>
+
+		<li><a href="http://web.doujindou.com/event/">イベント一覧から探す</a></li>
+	</ul>
+</div>
+
+
+<div class="menu-box">
+	<div class="menu-title">イベント新刊</div>
+
+		<div class="menu-box90"><div class="box90-img">
+		<a href="/event/e_c1-11/">
+		<img src="http://doujindou.com/img/I/3/8/a/38aae010a444b0dbbbee14c61b4017c2/90.jpg" 
+		alt="Comic1☆11作品一覧"></div>
+		<div class="box90-txt"><span>
+		Comic1☆11新刊一覧</span><br>
+		Comic1☆11新刊はこちら！</a><br></div></div>
+
+		<div class="menu-box90"><div class="box90-img">
+		<a href="/info/1612c91.php">
+		<img src="http://doujindou.com/img/I/a/b/7/ab7593b72b3ff5123e18292d1a3ecfad/90.jpg" 
+		alt="コミックマーケット91作品一覧"></div>
+		<div class="box90-txt"><span>
+		コミックマーケット91新刊一覧</span><br>
+		コミケ91新刊はこちら！</a><br></div></div>
+
+		<div class="menu-box90"><div class="box90-img">
+		<a href="/info/1608c90.php">
+		<img src="http://doujindou.com/img/I/8/e/8/8e83399ae777b265f0189673071d0503/90.jpg" 
+		alt="コミックマーケット90作品一覧"></div>
+		<div class="box90-txt"><span>
+		コミックマーケット90新刊一覧</span><br>
+		コミケ90新刊はこちら！</a><br></div></div>
+
+		<div class="menu-box90"><div class="box90-img">
+		<a href="/event/e_sc16su/">
+		<img src="http://doujindou.com/img/I/c/9/b/c9b5df2aa1b48f5d0d7f6b8b635be242/90.jpg" 
+		alt="サンシャインクリエイション2016 Summer作品一覧"></div>
+		<div class="box90-txt"><span>
+		サンシャインクリエイション2016 Summer作品一覧</span><br>
+		サンクリ2016 Summer新刊はこちら！</a><br></div></div>
+
+
+
+</div>
+<div class="menu-box">
+	<div class="menu-title">人気ジャンルピックアップ</div>
+	<div class="arrowlistmenu">
+	<ul>
+	<li><a href="http://web.doujindou.com/category/g_game/c_g_056/">東方Project</a></li>
+	<li><a href="http://web.doujindou.com/category/g_game/c_kankore/">艦隊これくしょん</a></li>
+	<li><a href="http://web.doujindou.com/category/g_anime/c_lovelive/">ラブライブ！</a></li>
+	<li><a href="http://web.doujindou.com/category/g_game/c_g_001/">THEIDOLM@STER</a></li>
+	<li><a href="http://web.doujindou.com/category/g_novel/c_re_zero/">Re：ゼロから始める異世界生活</a></li>
+	<li><a href="http://web.doujindou.com/category/g_anime/c_garupan/">ガールズ＆パンツァー</a></li>
+	<li><a href="http://web.doujindou.com/category/g_manga/c_gochiusa/">ご注文はうさぎですか？</a></li>
+	<li><a href="http://web.doujindou.com/category/g_anime/c_nanoha/">魔法少女リリカルなのは</a></li>
+	<li><a href="http://web.doujindou.com/category/g_manga/c_m_044/">美少女戦士セーラームーン</a></li>
+	<li><a href="http://web.doujindou.com/category/g_anime/c_a_039/">プリキュアシリーズ</a></li>
+	<li><a href="http://web.doujindou.com/category/g_anime/c_a_029/">新世紀エヴァンゲリオン</a></li>
+	<li><a href="http://web.doujindou.com/category/g_original/c_o_003/">オリジナル</a></li>
+	<li><a href="http://web.doujindou.com/category/">　→ジャンル一覧はこちら</a></li>
+
+	</ul>
+	</div>
+</div>
+
+
+<div class="menu-box">
+	<div class="menu-title">サークルピックアップ</div>
+	<div class="arrowlistmenu">
+		<ul>
+			<li><a href="http://web.doujindou.com/circle/c_4257/">クリムゾン</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4053/">うどんや</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4209/">有葉と愉快な仲間たち</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4247/">ナギヤマスギ</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4100/">かみか堂</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4159/">valssu</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4148/">STUDIO PAL</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4153/">HATENA-BOX</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_1214/">ノラネコノタマ</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4136/">〆切り3分前</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4184/">JACK-POT</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4111/">ヤドクガエル</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4108/">流石堂</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4176/">雷神会</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4261/">STUDIOふあん</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4188/">レズ萌え！</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4074/">ぱいんとさいず</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4064/">スタジオ・ワラビー</a></li>
+			<li><a href="http://web.doujindou.com/circle/c_4163/">悶亭</a></li>
+
+		</ul>
+	</div>
+</div>
+
+<!--<div class="menu-box">
+	<div class="menu-title">お買い得情報</div>
+	<div class="menubox_img100par">
+		<a href="http://web.doujindou.com/info/1409tokkkasale.html"><img src="/img08/tokusetu/tokka.jpg" alt="レア・希少の同人誌・同人ソフトが豊富に見つかる！"></a><br>
+	</div>
+</div>-->
+
+<div class="menu-box">
+	<div class="menu-title">同人堂提携店</div>
+	<div class="menubox_img100par">
+		<a href="http://web.doujindou.com/itaku/shops/" target="_blank"><img src="/img08/shoten.gif" alt="同人堂で取り扱いの商品を提携店舗を経由してお取り寄せ購入することが出来ます。提携店様も随時募集中！"></a>
+	</div>
+</div>
+
+
+
+
+<div class="menu-box">
+	<div class="menu-title">お支払い方法</div>
+	<div class="menubox_img100par">
+	<a href="http://web.doujindou.com/info/payment.html"><img src="/img08/yamato.gif" alt="代金引き換え" ></a>
+	</div>
+	<div class="menubox_img100par">
+		<a href="http://web.doujindou.com/info/payment.html"><img src="/img08/credit.gif" alt="JCB、VISA、MasterCard、American Express、Diners Club、Discover"></a>
+	</div>
+
+</div>
+
+
+<div class="menu-box">
+	<div class="menu-title">同人堂mobile</div>
+	<div class="menubox_img100par">
+		<a href="http://web.doujindou.com/info/mobile_info.html"><img src="/img08/mobile_info.gif" alt="同人堂携帯版"></a>
+	</div>
+</div>
+
+
+<br>
+<div class="menu-box">
+	<div class="menu-title">Twitter</div>
+	<div class="menubox_img100par">
+		<a href="http://twitter.com/doujindou_" target="_blank"><img src="/img08/twitter_bn.gif" alt="Twitter始めました。"></a>
+	</div>
+
+<br>
+
+
+
+
+
+
+<div class="menu-box">
+	<div class="menu-title">サークル募集中</div>
+</div>
+
+<div style="text-align:center">
+	<a href="http://web.doujindou.com/itaku/">
+	<img src="/img08/for_circle_left1404.jpg" alt="同人堂サークル募集">
+	</a>
+</div>
+	<div class="text-list-c">
+		<ul>
+			<li><a href="http://web.doujindou.com/itaku/#circle2">委託の流れ</a></li>
+			<li><a href="http://web.doujindou.com/itaku/privacy/">サークル向プライバシーポリシー</a></li>
+			<li><a href="http://web.doujindou.com/itaku/file_download/">各種ファイルダウンロード</a></li>
+			<li><a href="http://web.doujindou.com/itaku/agreement/">取引約款</a></li>
+		</ul>
+	</div>
+
+
+
+
+
+
+</div>
+<br>
+
+
+
+
+
+
+		</div>
+	</div>
+	<div id="menu-right">
+
+
+<!-- 右部 -->
+
+<div class="menu-box">
+	<div class="menu-title">通販受付発送状況</div>
+	<div class="post_infonew2">通常発送 07/21 15:00 受付分</div>
+	<div class="post_infonew3">日付指定 07/24 到着分</div>
+	<div class="post_infonew4">まで発送済み</div>
+</div>
+
+
+	
+	
+
+
+
+<div class="menu-box">
+	<div class="menu-title">配送遅延のお知らせ</div>
+	<div class="post_infonew2">
+大雨による影響の為、<br />
+九州地方、福岡県<br />
+大分県への配送に<br />
+遅れが発生しております。<br />
+ご不便をお掛けしますが、<br />
+何卒ご理解下さいますよう<br />
+宜しくお願い申し上げます。<br />
+</div></div>
+
+
+
+<div class="menu-box">
+	<div class="menu-title">同人堂オリジナル商品</div>
+	<div class="menubox_img100par">
+		<a href="/info/originalbrand.php"><img src="/img08/originalbrand-right.jpg" alt="同人堂オリジナル商品"></a>
+	</div>
+	</div>
+
+
+
+<div class="menu-box">
+	<div class="menu-title">新規サークル特集！</div>
+	<div class="menubox_img100par">
+		<a href="/info/new-circle.php"><img src="/img08/feature/new-circle/right.jpg" alt="新規サークル特集"></a>
+	</div>
+	</div>
+
+
+<div class="menu-box">
+	<div class="menu-title">東方project特集ページ！</div>
+	<div class="menubox_img100par">
+		<a href="/info/g_056.php"><img src="/img08/feature/g_056/right.jpg" alt="東方project特集ページ"></a>
+	</div>
+	</div>
+
+
+<div class="menu-box">
+	<div class="menu-title">創作(オリジナル)作品特集ページ！</div>
+	<div class="menubox_img100par">
+		<a href="/info/g_original.php"><img src="/img08/feature/g_original/right.jpg" alt="創作(オリジナル)作品特集ページ"></a>
+	</div>
+	</div>
+
+
+<div class="menu-box">
+	<div class="menu-title">艦隊これくしょん 作品特集ページ！</div>
+	<div class="menubox_img100par">
+		<a href="/info/kankore.php"><img src="/img08/feature/kankore/right.jpg" alt="艦隊これくしょん -艦これ- 作品特集ページ"></a>
+	</div>
+	</div>
+
+
+<div class="menu-box">
+	<div class="menu-title">原作ラノベ・小説 作品特集ページ！</div>
+	<div class="menubox_img100par">
+		<a href="/info/oiginal-work-novel.php"><img src="/img08/feature/oiginal-work-novel/right.jpg" alt="原作ラノベ・小説 作品特集ページ"></a>
+	</div>
+	</div>
+
+<div class="menu-box">
+	<div class="menu-title">週刊少年ジャンプ 作品特集ページ！</div>
+	<div class="menubox_img100par">
+		<a href="/info/weekly-jump.php"><img src="/img08/feature/weekly-jump/right.jpg" alt="週刊少年ジャンプ 作品特集ページ"></a>
+	</div>
+	</div>
+
+<div class="menu-box">
+	<div class="menu-title">スペシャルプライスコーナーページ！</div>
+	<div class="menubox_img100par">
+		<a href="/info/special-price.php"><img src="/img08/feature/special-price/right.jpg" alt="スペシャルプライスコーナーページ"></a>
+	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<div class="menu-box">
+	<div class="menu-title">企業ブース出展します！</div>
+	<div class="menubox_img100par">
+		<a href="http://web.doujindou.com/info/201505reitai12th.php"><img src="/info/img/201505reitai12th/201505reitai12th-right.jpg" alt="企業ブース出展します！"></a>
+	</div>
+</div>
+
+-->
+
+
+<div class="menu-box">
+	<div class="menu-title">抱き枕デビューに！</div>
+	<div class="menubox_img100par">
+		<a href="http://web.doujindou.com/info/hajimete_daki.html"><img src="/img08/beginner.gif" alt="初めての抱き枕カバー　ガイドライン"></a>
+	</div>
+</div>
+
+	<div class="menu-box">
+	<div class="menu-title">ランキング</div>
+	<div id="textdecoration_none">
+		<div class="textdecoration_none">
+			<div class="allrankingout_box"><div class="sideranking_bardjs">同人誌</div><div class="allrankingout_djs"><div class="toprankbox">
+	<div class="toprankbox_in1">1</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/63909.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/9/0/d/90d60beb748605ceebd6f17551dd5a1d/150.jpg" alt="１年間痴漢され続けた女　２">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">１年間痴漢され続けた女　２</div>
+				<div class="sideranking_price">1080円　クリムゾン</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">2</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65616.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/5/6/6/5662a9826d649393c8a6df7dd5792e35/150.jpg" alt="光の君のさがなき計画〈藤壺〉">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">光の君のさがなき計画〈藤壺〉</div>
+				<div class="sideranking_price">756円　ノラネコノタマ</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">3</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65607.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/a/1/6/a16922fbf0b1d4a774a7cf5a9151d616/150.jpg" alt="政府公認NTR子作りマッチング2">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">政府公認NTR子作りマッチング2</div>
+				<div class="sideranking_price">810円　sarfatation</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">4</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65513.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/8/0/f/80f697da6dc66ff8fd7f33f79d58ab80/150.jpg" alt="まぐ太ノート2冊目「いろんなバニーガール」">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">まぐ太ノート2冊目「いろんなバニーガール」</div>
+				<div class="sideranking_price">771円　C-ARTS</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">5</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65511.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/b/f/1/bf11fdcbf726b9d3168de9c8fd612995/150.jpg" alt="毒のあまいつかいみち">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">毒のあまいつかいみち</div>
+				<div class="sideranking_price">767円　サークルフィオレ</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div></div></div>
+			<div class="allrankingout_box"><div class="sideranking_barsof">同人ソフト</div><div class="allrankingout_sof"><div class="toprankbox">
+	<div class="toprankbox_in1">1</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/63398.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/8/1/f/81fbf0c93a4ec21fabfee233be6c302b/150.jpg" alt="ドラゴンアカデミー２ぷらす">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">ドラゴンアカデミー２ぷらす</div>
+				<div class="sideranking_price">2160円　SPLUSH　WAVE</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">2</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65185.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/c/2/6/c2602dd42178714ba528e2ec8e2dad42/150.jpg" alt="ワルキューレAスレイブ">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">ワルキューレAスレイブ</div>
+				<div class="sideranking_price">1836円　03 fantasy</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">3</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/63252.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/c/8/4/c84e35a6b0bb8d79f9babdc74d53587f/150.jpg" alt="ば○おん!!はぁはぁCG集">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">ば○おん!!はぁはぁCG集</div>
+				<div class="sideranking_price">1188円　LolitaChannel</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">4</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/47002.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/4/b/3/4b311486334045d519ad24f21f76421a/150.jpg" alt="東方陵辱　sp3">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">東方陵辱　sp3</div>
+				<div class="sideranking_price">1296円　ナギヤマスギ</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">5</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/63197.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/9/0/5/905498d9bf6ede593ab4dfe3c3d830b7/150.jpg" alt="ニンジ○スレイヤーはぁはぁCG集">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">ニンジ○スレイヤーはぁはぁCG集</div>
+				<div class="sideranking_price">1188円　LolitaChannel</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div></div></div>
+			<div class="allrankingout_box"><div class="sideranking_bardmc">抱き枕カバー</div><div class="allrankingout_dmc"><div class="toprankbox">
+	<div class="toprankbox_in1">1</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65574.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/c/e/5/ce521a6cd1e1ff6e0a6048414df95158/150.jpg" alt="Fate R18 ハサン・サッバーハ 抱き枕カバー">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">Fate R18 ハサン・サッバーハ 抱き枕カバー</div>
+				<div class="sideranking_price">12960円　Moe</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">2</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65611.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/4/1/6/41676a159fddeadd184b33b2e459a3d5/150.jpg" alt="RWBY R18 ワイス・シュニー 抱き枕カバー">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">RWBY R18 ワイス・シュニー 抱き枕カバー</div>
+				<div class="sideranking_price">12799円　EB</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">3</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65605.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/3/0/2/302d81c382f64c3ef4866c87da8711c6/150.jpg" alt="『お嬢様は素直になれない』六花　おまけボイス付き抱き枕カバー">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">『お嬢様は素直になれない』六花　おまけボイス付き抱き枕カバー</div>
+				<div class="sideranking_price">11880円　ensemble</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">4</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65604.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/2/b/0/2b0779ffdeb2fccadc1df21b6cdb7bb8/150.jpg" alt="るちえ先生描き下ろし『ダキカノ』vol.9 宮坂 陽菜 抱き枕カバー DL特典ボイス付">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">るちえ先生描き下ろし『ダキカノ』vol.9 宮坂 陽菜 抱き枕カバー DL特典ボイス付</div>
+				<div class="sideranking_price">12744円　WiLLplus</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">5</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65602.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/2/5/8/2588126ddc4df7544b6f612ccb8ac856/150.jpg" alt="エ○マンガ先生 千寿 ム○マサ抱き枕カバー【予約受注生産商品】">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">エ○マンガ先生 千寿 ム○マサ抱き枕カバー【予約受注生産商品】</div>
+				<div class="sideranking_price">11340円　抱け枕工房</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div></div></div>
+			<div class="allrankingout_box"><div class="sideranking_barcos">コスプレ</div><div class="allrankingout_cos"><div class="toprankbox">
+	<div class="toprankbox_in1">1</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65499.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/7/9/f/79f02d14352765ae8e7df10c9bf1d7c3/150.jpg" alt="レムは今、この時のために生まれてきたんですね///[S] オーサリングDVD版">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">レムは今、この時のために生まれてきたんですね///[S] オーサリングDVD版</div>
+				<div class="sideranking_price">2160円　SexSyndrome</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">2</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65496.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/5/9/4/594d8101710a33bb51435cbe25d04f68/150.jpg" alt="バイア○ラ飲んだら感度爆上げで楓さんの大事な子宮がデカ生ちんＰに精液便所にされちゃいま～す[S]">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">バイア○ラ飲んだら感度爆上げで楓さんの大事な子宮がデカ生ちんＰに精液便所にされちゃいま～す[S]</div>
+				<div class="sideranking_price">2160円　SexSyndrome</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">3</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65138.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/3/e/a/3ea0aabcdb04a9e2c7d60fb950d8b1bf/150.jpg" alt="MarioRQセクシー撮影会～むちむちレイヤーハメ撮りOK撮影会～">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">MarioRQセクシー撮影会～むちむちレイヤーハメ撮りOK撮影会～</div>
+				<div class="sideranking_price">3780円　ひよひよくらぶ</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">4</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65137.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/9/d/6/9d63220a4075c63116682c1c51048a64/150.jpg" alt="せっくすフレンズ">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">せっくすフレンズ</div>
+				<div class="sideranking_price">3780円　ひよひよくらぶ</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">5</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/64871.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/0/3/2/032910511bf4ecb67bf31ba448278419/150.jpg" alt="KASIMA">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">KASIMA</div>
+				<div class="sideranking_price">2160円　ひよひよくらぶ</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div></div></div>
+			<div class="allrankingout_box"><div class="sideranking_barsof">DVDPG</div><div class="allrankingout_sof"><div class="toprankbox">
+	<div class="toprankbox_in1">1</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65288.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/f/b/1/fb142eb4eb2612b01f5c4d39f897638f/150.jpg" alt="【DVD-PG】バカな妹を利口にするのは俺の××だけな件について [PG EDITION]（HCDP-055）">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">【DVD-PG】バカな妹を利口にするのは俺の××だけな件について [PG EDITION]（HCDP-055）</div>
+				<div class="sideranking_price">3218円　ホビコレD</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">2</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65392.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/b/e/1/be1b7e6180e2f3d1ed9dfb678327deab/150.jpg" alt="【DVD-PG】裏生徒会よ、肛門を制圧せよ！　DVD-PG スペシャルエディション（ENE-050）">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">【DVD-PG】裏生徒会よ、肛門を制圧せよ！　DVD-PG スペシャルエディション（ENE-050）</div>
+				<div class="sideranking_price">3218円　E-ne！</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">3</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65391.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/e/4/3/e433f65eed44a43a4005119194bb17b1/150.jpg" alt="【DVD-PG】わ、わたしを縛りたい？～僕と地味娘の秘密の関係（CPPG-193）">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">【DVD-PG】わ、わたしを縛りたい？～僕と地味娘の秘密の関係（CPPG-193）</div>
+				<div class="sideranking_price">4309円　WORLD PG[S]</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">4</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65390.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/1/3/4/13427c34102e8ee64b422437cb0f0b2a/150.jpg" alt="【DVD-PG】キモオタと言われる俺が、欲求不満な肉穴に中出ししまくりました～地味だけど実は淫乱な巨乳人妻（CPPG-192）">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">【DVD-PG】キモオタと言われる俺が、欲求不満な肉穴に中出ししまくりました～地味だけど実は淫乱な巨乳人妻（CPPG-192）</div>
+				<div class="sideranking_price">4309円　WORLD PG[S]</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">5</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65389.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/d/a/0/da0a6b7f4e18248113375a3151893408/150.jpg" alt="【DVD-PG】君がいた図書室（CPPG-191）">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">【DVD-PG】君がいた図書室（CPPG-191）</div>
+				<div class="sideranking_price">4309円　WORLD PG[S]</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div></div></div>
+			<div class="allrankingout_box"><div class="sideranking_bardmc">PCゲーム</div><div class="allrankingout_dmc"><div class="toprankbox">
+	<div class="toprankbox_in1">1</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65284.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/c/e/7/ce7d20740ed380b2de84d434af383142/150.jpg" alt="【PCｹﾞｰﾑ】外道魔法少女りんね～悪淫悪化～（VAL-040）">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">【PCｹﾞｰﾑ】外道魔法少女りんね～悪淫悪化～（VAL-040）</div>
+				<div class="sideranking_price">3456円　わるきゅ～れ</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">2</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65281.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/c/1/a/c1a6f8d6e0ca095741fa2d223743fb47/150.jpg" alt="【PCｹﾞｰﾑ】アパタイト　セレクトパック　坂本大　ＶＯＬ.１（APTP-006）">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">【PCｹﾞｰﾑ】アパタイト　セレクトパック　坂本大　ＶＯＬ.１（APTP-006）</div>
+				<div class="sideranking_price">3240円　アパタイト</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">3</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65349.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/e/6/4/e646e2fec7dcbe33111f4481a96523af/150.jpg" alt="D.C.Ⅲ DreamDays～ダ･カーポⅢ～ドリームデイズ　初回限定版">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">D.C.Ⅲ DreamDays～ダ･カーポⅢ～ドリームデイズ　初回限定版</div>
+				<div class="sideranking_price">8554円　CIRCUS</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">4</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65280.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/b/5/7/b578daaaa8e677179291cb1da1345ab7/150.jpg" alt="【PCｹﾞｰﾑ】Ｏｈ，Ｙｅｓ！ 褐色ビッチ人妻の性欲解消　～エロエロできるママさんバレー会～（APT-089）">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">【PCｹﾞｰﾑ】Ｏｈ，Ｙｅｓ！ 褐色ビッチ人妻の性欲解消　～エロエロできるママさんバレー会～（APT-089）</div>
+				<div class="sideranking_price">2160円　アパタイト</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div><div class="toprankbox">
+	<div class="toprankbox_in1">5</div>
+	<div class="toprankbox_in2">
+		<a href="http://web.doujindou.com/view/65279.html">
+			<div class="DMinfoIMGbox">
+				<img src="http://doujindou.com/img/I/4/8/6/486543e66581fd1aca6437c4a0bfb13f/150.jpg" alt="【PCｹﾞｰﾑ】妻にナイショのＪＫアナル調教　～妹に尻穴の良さを教える義兄～（APT-088）">
+			</div>
+			<div class="DMinfoTXTbox">
+				<div class="sideranking_title">【PCｹﾞｰﾑ】妻にナイショのＪＫアナル調教　～妹に尻穴の良さを教える義兄～（APT-088）</div>
+				<div class="sideranking_price">2160円　アパタイト</div>
+			</div>
+			<br clear="all">
+		</a>
+	</div>
+	<br clear="all">
+</div></div></div>
+
+			<a class="seekDetail_a" style="margin: 0 4px 4px 0;padding: 2px 15px;clear: both;" href="http://web.doujindou.com/top/ranking.php">ランキングをもっと見る</a>
+		</div>
+	</div>
+</div>
+	<!--
+<div class="menu-box">
+	<div class="menu-title">同人堂特典</div>
+	<div class="menu-box90">
+		<div class="box90-img">
+			<a href="http://web.doujindou.com/info/pointchangeitem.html"><img src="http://web.doujindou.com/feature/img/0808point/riplip.gif" alt="同人堂オリジナルグッズポイント交換"></a>
+		</div>
+		<div class="box90-txt">
+			<a href="http://web.doujindou.com/info/pointchangeitem.html">
+				<span>同人堂ポイントオリジナルグッズ交換</span><br>
+				ポイントでゲット！
+			</a>
+		</div>
+	</div>
+</div>
+-->
+
+
+
+
+
+	</div>
+
+	<div id="footer">
+
+
+<!-- 下部 -->
+
+
+
+<div class="f-guide">
+	<div class="f-guidebox2"><a href="http://web.doujindou.com/category/k_doujinshi/">同人誌</a></div>
+	<div class="f-guidebox"><a href="http://web.doujindou.com/category/k_allgame/">同人ソフト</a></div>
+	<div class="f-guidebox"><a href="http://web.doujindou.com/category/k_pcgame/">PCゲーム</a></div>
+	<div class="f-guidebox"><a href="http://web.doujindou.com/category/k_dvdpg/">DVDPG/BDPG</a></div>
+	<div class="f-guidebox"><a href="http://web.doujindou.com/category/k_animedvd/">アニメDVD/BD</a></div>
+    <div class="f-guidebox"><a href="http://web.doujindou.com/seek/index.php?cla=pillow_slip">抱き枕カバー</a></div>
+    <div class="f-guidebox"><a href="http://web.doujindou.com/category/k_goods/">同人グッズ</a></div>
+    <div class="f-guidebox2"><a href="http://web.doujindou.com/category/k_goods3/">ホビー</a></div>
+	<div class="f-guidebox"><a href="http://web.doujindou.com/category/k_cos/">コスプレ</a></div>
+	<div class="f-guidebox"><a href="http://web.doujindou.com/category/k_clothes/">コスプレ衣装</a></div>
+	<div class="f-guidebox"><a href="http://web.doujindou.com/category/k_goods2/">アダルトグッズ</a></div>
+	<div class="f-guidebox"><a href="http://web.doujindou.com/category/k_etc/">その他</a></div>
+	<div class="f-guidebox"><a href="http://web.doujindou.com/cart/">カートを見る</a></div>
+	<div class="f-guidebox"><a href="http://web.doujindou.com/seek/detail.php">詳細検索</a></div>
+
+</div>
+
+<div class="f-sitemap">
+	<a href="http://web.doujindou.com/top.html">トップページ</a>	
+	<a href="http://web.doujindou.com/info/first.html">はじめてのお客様へ</a>
+	<a href="http://web.doujindou.com/info/member.html">会員制度について</a>
+	<a href="http://web.doujindou.com/info/faq.html">よくあるご質問</a>
+	<a href="http://web.doujindou.com/info/kiyaku.html">ご利用規約</a>
+	<a href="http://web.doujindou.com/itaku/">委託販売について</a>
+	<a href="http://web.doujindou.com/link/">リンク集</a>
+	<a href="http://web.doujindou.com/info/company.html">会社概要</a>
+	<a href="http://web.doujindou.com/info/law.html">特商法表示</a>
+	<a href="http://web.doujindou.com/info/contact.html">お問い合わせ</a>
+<br>
+</div>
+<div class="copyright">
+	<a href="http://web.doujindou.com/top.html">同人誌、ソフト、抱き枕カバーの通販&copy;同人堂</a><br>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47891117-1', 'doujindou.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1604759-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
