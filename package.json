@@ -15,7 +15,7 @@
     "ignore": "t/"
   },
   "bin": {
-    "meta-webdoujindou": "./bin/metasearch"
+    "meta-webdoujindou": "./bin/metasearch.js"
   },
   "devDependencies": {
     "minimist": "^1.2.0",
